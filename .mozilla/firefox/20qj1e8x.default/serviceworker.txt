@@ -1,0 +1,16 @@
+4
+
+https://web.telegram.org/
+https://web.telegram.org/service_worker.js
+{baeb27fd-04f2-4b19-b6f1-5d94c496eea9}
+#
+
+https://www.pinterest.com/
+https://www.pinterest.com/sw.js
+{c60a8713-fd82-4fe9-85cf-c0f1ab2231ae}
+#
+
+https://www.youtube.com/
+https://www.youtube.com/sw.js
+{401878b7-fdf9-4e1a-bfac-046bd73b05a1}
+#
