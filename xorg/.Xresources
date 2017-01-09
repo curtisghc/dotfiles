@@ -1,0 +1,102 @@
+URxvt.scrollBar: false
+URxvt.geometry: 84x25
+
+! Fonts
+URxvt.letterSpace: -1
+URxvt.font: xft:Meslo LG M:size=10
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+! Colors
+*fadeColor:             #002b36
+*pointerColorBackground:#586e75
+*pointerColorForeground:#93a1a1
+
+!!
+!! Tomorrow
+!!
+!URxvt*background:       #2d2d2d
+!URxvt*foreground:       #d3d0c8
+!*cursorColor:           #d3d0c8
+
+!! black dark/light
+!*color0:                #2d2d2d
+!*color8:                #747369
+
+!! red dark/light
+!*color1:                #dc322f
+!*color9:                #cb4b16
+
+!! green dark/light
+!*color2:                #859900
+!*color10:               #586e75
+
+!! yellow dark/light
+!*color3:                #b58900
+!*color11:               #657b83
+
+!! blue dark/light
+!*color4:                #268bd2
+!*color12:               #839496
+
+!! magenta dark/light
+!*color5:                #d33682
+!*color13:               #6c71c4
+
+!! cyan dark/light
+!*color6:                #2aa198
+!*color14:               #93a1a1
+
+!! white dark/light
+!*color7:                #eee8d5
+!*color15:               #fdf6e3
+
+!!
+!! Ivory Light
+!!
+URxvt*foreground:	#3e424d
+URxvt*background:   #fef9ec
+
+!URxvt*foreground:	#0000ff
+!URxvt*background:   #fef9ec
+*.cursorColor:  #6d727e
+
+! black
+*.color0:       #c5c1b4
+*.color8:       #a1a6b2
+
+! red
+*.color1:       #e75c58
+*.color9:       #b22b31
+
+! green
+*.color2:       #00a250
+*.color10:      #007427
+
+! yellow
+*.color3:       #a08a00
+*.color11:      #715f00
+
+! blue
+*.color4:       #208ffb
+*.color12:      #0065ca
+
+! magenta
+*.color5:       #d160c4
+*.color13:      #a03196
+
+! cyan
+*.color6:       #00a4c1
+*.color14:      #007693
+
+! white
+*.color7:       #3e424d
+*.color15:      #282c36
+!!
+!!
+!!
