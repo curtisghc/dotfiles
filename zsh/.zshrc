@@ -126,7 +126,7 @@ autoload -U colors && colors
 PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[white]%}% λ %{$reset_color%}%"
 
 #RPROMPT="[%{$fg_no_bold[yellow]%}%?%f]"
-RPROMPT="[%{$fg_no_bold[yellow]%}%m%f]"
+RPROMPT="[%{$fg_no_bold[yellow]%}%n@%m%f]"
 
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
