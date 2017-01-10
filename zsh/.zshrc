@@ -123,17 +123,18 @@ promptinit
 autoload -U colors && colors
 #PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[grey]%}% >%{$fg_bold[cyan]%}% >%{$fg_bold[white]%}% > %{$reset_color%}%"
 
-PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[white]%}% Δ %{$reset_color%}%"
+PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[white]%}% λ %{$reset_color%}%"
 
-RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+#RPROMPT="[%{$fg_no_bold[yellow]%}%?%f]"
+RPROMPT="[%{$fg_no_bold[yellow]%}%m%f]"
 
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
 
-#numlockx on
-
-#alias weather='weather -i kphl'
 alias nosebleed='sh $HOME/scripts/nosebleed.sh'
+
+alias wttr='curl -s http://wttr.in/'
+alias ec='emacsclient'
 
 #bash /home/curtis/.fetch.sh
 
