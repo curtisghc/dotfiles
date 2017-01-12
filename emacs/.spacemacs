@@ -50,7 +50,7 @@ values."
      version-control
      c-c++
      scheme
-     emacs-lisp
+     ;;emacs-lisp
      haskell
      vimscript
      latex
