@@ -41,7 +41,6 @@ values."
             shell-default-term-shell "/bin/zsh"
             shell-default-position 'bottom
             shell-default-height 30)
-     markdown
      helm
      org
      git
@@ -49,12 +48,14 @@ values."
      syntax-checking
      version-control
      c-c++
+     ;;haskell
+     ;;java
+     ;;javascript
      scheme
-     ;;emacs-lisp
-     haskell
+     emacs-lisp
      vimscript
      latex
-     ;; markdown
+     markdown
      ;; better-defaults
      ;; spell-checking
      )
