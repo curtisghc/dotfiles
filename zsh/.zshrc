@@ -123,10 +123,10 @@ promptinit
 autoload -U colors && colors
 #PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[grey]%}% >%{$fg_bold[cyan]%}% >%{$fg_bold[white]%}% > %{$reset_color%}%"
 
-PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[white]%}% λ %{$reset_color%}%"
+#PROMPT="%{$fg[yellow]%}%  %~ %{$fg_bold[white]%}% λ %{$reset_color%}%"
+PROMPT=" %m%{$fg[yellow]%}%  %~ %{$fg_bold[white]%}% λ %{$reset_color%}%"
 
-#RPROMPT="[%{$fg_no_bold[yellow]%}%?%f]"
-RPROMPT="[%{$fg_no_bold[yellow]%}%n@%m%f]"
+RPROMPT="[%{$fg_no_bold[yellow]%}%?%f]"
 
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
