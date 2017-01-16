@@ -41,11 +41,8 @@ values."
             shell-default-term-shell "/bin/zsh"
             shell-default-position 'bottom
             shell-default-height 30)
-<<<<<<< HEAD
      markdown
      clojure
-=======
->>>>>>> b07b2f48d6b90faa334af0905e41b1bdba8ce664
      helm
      org
      git
