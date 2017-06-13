@@ -2,8 +2,8 @@ URxvt.scrollBar: false
 URxvt.geometry: 84x25
 
 ! Fonts
-URxvt.letterSpace: -1
-URxvt.font: xft:Meslo LG M:size=10
+!URxvt.letterSpace: -1
+URxvt.font: xft:DejaVu Sans Mono:size=10
 
 ! Cursor
 URxvt.cursorBlink:          true
