@@ -1,5 +1,6 @@
 URxvt.scrollBar: false
 URxvt.geometry: 84x25
+Emacs.geometry: 80x40
 
 ! Fonts
 !URxvt.letterSpace: -1
