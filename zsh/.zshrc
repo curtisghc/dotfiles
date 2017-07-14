@@ -10,6 +10,9 @@ alias l='ll -S'
 alias less='less --quiet'
 alias df='df --human-readable'
 alias du='du --human-readable'
+
+alias telegram='./bin/Telegram/Telegram'
+
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 bindkey "\e[5~" beginning-of-history
