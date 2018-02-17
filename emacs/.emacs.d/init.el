@@ -63,7 +63,7 @@
  '(fci-rule-color "#d9d9d9")
  '(package-selected-packages
    (quote
-    (gruvbox-theme eziam-theme tao-theme twilight-bright-theme flycheck jdee javap-mode java-snippets helm evil-org mu4e-alert doom-themes doom haskell-snippets haskell-mode yasnippet auto-complete-clang-async auto-complete python-environment magit gnu-apl-mode expand-region evil)))
+    (gruvbox-theme flycheck helm evil-org mu4e-alert haskell-snippets haskell-mode yasnippet auto-complete-clang-async auto-complete python-environment magit gnu-apl-mode expand-region evil)))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "mail.cock.li")
  '(smtpmail-smtp-service 465)
