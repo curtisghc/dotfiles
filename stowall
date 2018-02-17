@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
-PROGRAMS=(zsh xorg openbox lxqt spectrwm tmux mpd emacs vim xmonad xmobar)
+PROGRAMS=(zsh xorg openbox lxqt tmux emacs vim)
 for program in ${PROGRAMS[@]}; do
     stow $program
     echo "Ricing $program"
