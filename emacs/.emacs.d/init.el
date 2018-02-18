@@ -21,8 +21,11 @@
   :init
   (setq evil-want-C-u-scroll t)
   :config
-  (evil-mode 1))
+  (evil-mode t))
 (use-package evil-magit)
+(use-package evil-org
+  :init
+  (require 'evil-org))
 (use-package flycheck
   :config
   (add-hook 'after-init-hook #'global-flycheck-mode))
@@ -34,7 +37,6 @@
   (require 'auto-complete-config)
   (ac-config-default))
 ;(use-package auto-complete-clang-async)
-(use-package evil-org)
 (use-package haskell-mode)
 (use-package haskell-snippets)
 (use-package python-environment)
@@ -90,6 +92,7 @@
 ;;(set-face-attribute 'default t :font "Liberation Mono-10")
 (display-battery-mode t)
 (display-time-mode t)
+(org-indent-mode t)
 
 ;;qol updates
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -146,17 +149,3 @@
 ; ;; Your init file should contain only one such instance.
 ; ;; If there is more than one, they won't work right.
 ; '(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 103 :width normal)))))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-	(gruvbox-theme gnu-apl-mode magit python-environment haskell-snippets haskell-mode evil-org auto-complete yasnippet flycheck evil use-package))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
