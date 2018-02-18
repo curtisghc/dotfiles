@@ -24,8 +24,8 @@
   (evil-mode t))
 (use-package evil-magit)
 (use-package evil-org
-  :init
-  (require 'evil-org))
+	:config
+	(add-hook 'org-mode-hook 'evil-org-mode))
 (use-package flycheck
   :config
   (add-hook 'after-init-hook #'global-flycheck-mode))
