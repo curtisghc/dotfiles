@@ -1,42 +1,3 @@
-;;theme settings
-(load-theme 'gruvbox-light-soft t)
-(scroll-bar-mode 0)
-(tool-bar-mode 0)
-(global-linum-mode t)
-(blink-cursor-mode 0)
-(setq visible-bell t)
-(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
-(set-face-attribute 'default t :font "DejaVu Sans Mono-10")
-;;(add-to-list 'default-frame-alist '(font . "Liberation Mono-10"))
-;;(set-face-attribute 'default t :font "Liberation Mono-10")
-(display-battery-mode t)
-(display-time-mode t)
-
-;;qol updates
-(fset 'yes-or-no-p 'y-or-n-p)
-;;word wrap
-(visual-line-mode t)
-(show-paren-mode t)
-(setq-default show-trailing-whitespace t)
-(ido-mode t)
-(icomplete-mode t)
-
-;;indentation settings
-;;t for tabs
-(setq-default c-basic-offset 2)
-(setq indent-tabs-mode nil)
-(setq-default tab-width 4)
-
-
-
-;;keybindings
-(global-set-key [f1] 'eshell)
-(global-set-key (kbd "M-o") 'other-window)
-(global-set-key [f5] 'compile)
-
-;;(add-hook 'org-mode-hook #'toggle-word-wrap)
-
-
 ;;;package --- summary
 (require 'package)
 ;;; Code:
@@ -88,6 +49,50 @@
 
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+
+
+
+
+
+;;theme settings
+(load-theme 'gruvbox-light-soft t)
+(scroll-bar-mode 0)
+(tool-bar-mode 0)
+(global-linum-mode t)
+(blink-cursor-mode 0)
+(setq visible-bell t)
+(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
+(set-face-attribute 'default t :font "DejaVu Sans Mono-10")
+;;(add-to-list 'default-frame-alist '(font . "Liberation Mono-10"))
+;;(set-face-attribute 'default t :font "Liberation Mono-10")
+(display-battery-mode t)
+(display-time-mode t)
+
+;;qol updates
+(fset 'yes-or-no-p 'y-or-n-p)
+;;word wrap
+(visual-line-mode t)
+(show-paren-mode t)
+(setq-default show-trailing-whitespace t)
+(ido-mode t)
+(icomplete-mode t)
+
+;;indentation settings
+;;t for tabs
+(setq-default c-basic-offset 2)
+(setq indent-tabs-mode nil)
+(setq-default tab-width 4)
+
+
+
+;;keybindings
+(global-set-key [f1] 'eshell)
+(global-set-key (kbd "M-o") 'other-window)
+(global-set-key [f5] 'compile)
+
+;;(add-hook 'org-mode-hook #'toggle-word-wrap)
+
 (provide 'init)
 ;;; init.el ends here
 
