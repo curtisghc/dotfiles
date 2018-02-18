@@ -1,4 +1,4 @@
-;;;packages
+;;;package --- summary
 (require 'package)
 ;;; Code:
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -7,77 +7,56 @@
 ;;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-;;use-package configuration
-(unless (package-installed-p 'use-package)
-  (progn
-    (package-refresh-contents)
-    (package-install 'use-package)))
+;(unless (package-installed-p 'use-package)
+;  (progn
+;    (package-refresh-contents)
+;    (package-install 'use-package)))
 
-(require 'use-package)
-(setq use-package-always-ensure t)
+;(require 'use-package)
 
-;;use-package automatically installs and applys configurations
-(use-package evil
-  :init
-  (setq evil-want-C-u-scroll t)
-  :config
-  (evil-mode 1))
-(use-package flycheck
-  :config
-  (add-hook 'after-init-hook #'global-flycheck-mode))
-(use-package yasnippet
-  :config
-  (yas-global-mode 1))
-(use-package auto-complete
-  :config
-  (require 'auto-complete-config)
-  (ac-config-default))
-;(use-package auto-complete-clang-async)
-(use-package evil-org)
-(use-package haskell-mode)
-(use-package haskell-snippets)
-(use-package python-environment)
-(use-package magit)
-(use-package gnu-apl-mode)
-(use-package gruvbox-theme
-  :config
-  (load-theme 'gruvbox-light-soft t))
+;(use-package evil
+;  :ensure evil
+;  :init (progn
+;          ))
 
-
-
-;;just in case
 ;;packages listed
-;(setq package-list '(evil flycheck yasnippet auto-complete use-package
-;						  auto-complete-clang-async evil-org haskell-mode
-;						  haskell-snippets python-environment magit
-;						  gnu-apl-mode gruvbox-theme))
+(setq package-list '(evil flycheck yasnippet auto-complete use-package
+						  auto-complete-clang-async evil-org haskell-mode
+						  haskell-snippets python-environment magit
+						  gnu-apl-mode gruvbox-theme))
 
 ;;function to install packages probably only use when first configuring emacs
-;(defun install-packages ()
-;  "Run this to install all packages listed in package-list. Probably best used for first time setup."
-;  (interactive)
-;  (unless package-archive-contents
-;    (package-refresh-contents))
-;  (dolist (package package-list)
-;    (unless (package-installed-p package)
-;      (package-install package))))
-;
-;;;;Package settings
-;(require 'evil)
-;(evil-mode 1)
-;(setq evil-want-C-u-scroll t)
-;
-;(require 'auto-complete)
-;(require 'auto-complete-config)
-;(ac-config-default)
-;
-;(require 'yasnippet)
-;(yas-global-mode 1)
-;(require 'flycheck)
-;(add-hook 'after-init-hook #'global-flycheck-mode)
+(defun install-packages ()
+  "Run this to install all packages listed in package-list. Probably best used for first time setup."
+  (interactive)
+  (unless package-archive-contents
+    (package-refresh-contents))
+  (dolist (package package-list)
+    (unless (package-installed-p package)
+      (package-install package))))
+
+;;;Package settings
+(require 'evil)
+(evil-mode 1)
+(setq evil-want-C-u-scroll t)
+
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(require 'flycheck)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+
+
+
+
 
 ;;theme settings
-;(load-theme 'gruvbox-light-soft t)
+(load-theme 'gruvbox-light-soft t)
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
 (global-linum-mode t)
@@ -104,6 +83,8 @@
 (setq-default c-basic-offset 2)
 (setq indent-tabs-mode nil)
 (setq-default tab-width 4)
+
+
 
 ;;keybindings
 (global-set-key [f1] 'eshell)
