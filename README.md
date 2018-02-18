@@ -15,15 +15,4 @@ Run `stow -t etc` to link etc files to /etc
 Obviously, any directory named will be useless without that package installed
 
 ###Xresources includes -
-*Meslo font
 *rxvt-unicode
-
-###Startup script includes -
-*xorg
-*xbindkeys
-*xmodmap
-*numlockx
-*redshift
-*feh
-*compton
-*urxvt
