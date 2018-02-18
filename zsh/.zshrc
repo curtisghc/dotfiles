@@ -134,6 +134,8 @@ RPROMPT="[%{$fg_no_bold[yellow]%}%?%f]"
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
 
+xrdb -merge ~/.Xresources
+
 alias nosebleed='sh $HOME/scripts/nosebleed.sh'
 
 alias wttr='curl -s http://wttr.in/'
