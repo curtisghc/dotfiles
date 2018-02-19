@@ -4,7 +4,7 @@ Emacs.font: DejaVu Sans Mono-10
 Emacs.geometry: 82x40
 
 ! Fonts
-URxvt.letterSpace: -1
+!URxvt.letterSpace: -1
 URxvt.font: xft:DejaVu Sans Mono:size=10
 
 ! Cursor
