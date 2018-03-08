@@ -94,6 +94,8 @@
 (display-time-mode t)
 (org-indent-mode t)
 
+(add-hook 'text-mode-hook 'visual-line-mode t)
+
 ;;qol updates
 (fset 'yes-or-no-p 'y-or-n-p)
 ;;word wrap
