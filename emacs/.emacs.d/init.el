@@ -1,4 +1,6 @@
-;;;packages
+;;; Commentary:
+;;; package --- Summary
+;;packages
 (require 'package)
 ;;; Code:
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -37,11 +39,12 @@
   (require 'auto-complete-config)
   (ac-config-default))
 ;(use-package auto-complete-clang-async)
-(use-package haskell-mode)
-(use-package haskell-snippets)
+;(use-package haskell-mode)
+;(use-package haskell-snippets)
 (use-package python-environment)
 (use-package magit)
 (use-package gnu-apl-mode)
+(use-package markdown-mode)
 (use-package gruvbox-theme
   :config
   (load-theme 'gruvbox-light-soft t))
@@ -95,6 +98,7 @@
 (org-indent-mode t)
 
 (add-hook 'text-mode-hook 'visual-line-mode t)
+(add-hook 'org-mode-hook 'org-beamer-mode t)
 
 ;;qol updates
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -104,6 +108,9 @@
 (setq-default show-trailing-whitespace t)
 (ido-mode t)
 (icomplete-mode t)
+
+(setq org-src-tab-acts-natively t)
+
 
 ;;indentation settings
 ;;t for tabs
@@ -151,3 +158,17 @@
 ; ;; Your init file should contain only one such instance.
 ; ;; If there is more than one, they won't work right.
 ; '(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 103 :width normal)))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+	(markdown-mode+ markdown-mode use-package python-environment haskell-snippets haskell-mode gruvbox-theme gnu-apl-mode flycheck evil-org evil-magit auto-complete))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
