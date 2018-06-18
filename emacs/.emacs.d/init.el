@@ -45,6 +45,8 @@
 (use-package magit)
 (use-package gnu-apl-mode)
 (use-package markdown-mode)
+(use-package flyspell)
+(use-package pdf-tools)
 (use-package gruvbox-theme
   :config
   (load-theme 'gruvbox-light-soft t))
@@ -99,6 +101,7 @@
 
 (add-hook 'text-mode-hook 'visual-line-mode t)
 (add-hook 'org-mode-hook 'org-beamer-mode t)
+(add-hook 'org-mode-hook 'flyspell-mode t)
 
 ;;qol updates
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -165,7 +168,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-	(markdown-mode+ markdown-mode use-package python-environment haskell-snippets haskell-mode gruvbox-theme gnu-apl-mode flycheck evil-org evil-magit auto-complete))))
+	(pdf-tools markdown-mode+ markdown-mode use-package python-environment haskell-snippets haskell-mode gruvbox-theme gnu-apl-mode flycheck evil-org evil-magit auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
