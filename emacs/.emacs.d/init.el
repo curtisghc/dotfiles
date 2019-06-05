@@ -19,6 +19,7 @@
 (setq use-package-always-ensure t)
 
 ;;use-package automatically installs and applys configurations
+(use-package ess)
 (use-package evil
   :init
   (setq evil-want-C-u-scroll t)
