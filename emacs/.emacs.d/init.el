@@ -17,6 +17,7 @@
 (setq use-package-always-ensure t)
 
 ;;use-package automatically installs and applys configurations
+(use-package ess)
 (use-package evil
   :init
   (setq evil-want-C-u-scroll t)
@@ -151,3 +152,17 @@
 ; ;; Your init file should contain only one such instance.
 ; ;; If there is more than one, they won't work right.
 ; '(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 103 :width normal)))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+	(ess ess-R-data-view gruvbox-theme gnu-apl-mode python-environment haskell-snippets haskell-mode auto-complete yasnippet use-package popup flycheck evil-org evil-magit))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
