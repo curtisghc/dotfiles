@@ -1,4 +1,6 @@
-;;;packages
+;;; Commentary:
+;;; package --- Summary
+;;packages
 (require 'package)
 ;;; Code:
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -17,7 +19,6 @@
 (setq use-package-always-ensure t)
 
 ;;use-package automatically installs and applys configurations
-(use-package ess)
 (use-package evil
   :init
   (setq evil-want-C-u-scroll t)
@@ -38,11 +39,14 @@
   (require 'auto-complete-config)
   (ac-config-default))
 ;(use-package auto-complete-clang-async)
-(use-package haskell-mode)
-(use-package haskell-snippets)
+;(use-package haskell-mode)
+;(use-package haskell-snippets)
 (use-package python-environment)
 (use-package magit)
 (use-package gnu-apl-mode)
+(use-package markdown-mode)
+(use-package flyspell)
+(use-package pdf-tools)
 (use-package gruvbox-theme
   :config
   (load-theme 'gruvbox-light-soft t))
@@ -96,6 +100,8 @@
 (org-indent-mode t)
 
 (add-hook 'text-mode-hook 'visual-line-mode t)
+(add-hook 'org-mode-hook 'org-beamer-mode t)
+(add-hook 'org-mode-hook 'flyspell-mode t)
 
 ;;qol updates
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -105,6 +111,9 @@
 (setq-default show-trailing-whitespace t)
 (ido-mode t)
 (icomplete-mode t)
+
+(setq org-src-tab-acts-natively t)
+
 
 ;;indentation settings
 ;;t for tabs
@@ -159,7 +168,11 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
+<<<<<<< HEAD
 	(ess ess-R-data-view gruvbox-theme gnu-apl-mode python-environment haskell-snippets haskell-mode auto-complete yasnippet use-package popup flycheck evil-org evil-magit))))
+=======
+	(pdf-tools markdown-mode+ markdown-mode use-package python-environment haskell-snippets haskell-mode gruvbox-theme gnu-apl-mode flycheck evil-org evil-magit auto-complete))))
+>>>>>>> 580efec41516292dccbc953620254f511de1f990
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
