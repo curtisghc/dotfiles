@@ -169,11 +169,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-<<<<<<< HEAD
-	(ess ess-R-data-view gruvbox-theme gnu-apl-mode python-environment haskell-snippets haskell-mode auto-complete yasnippet use-package popup flycheck evil-org evil-magit))))
-=======
-	(pdf-tools markdown-mode+ markdown-mode use-package python-environment haskell-snippets haskell-mode gruvbox-theme gnu-apl-mode flycheck evil-org evil-magit auto-complete))))
->>>>>>> 580efec41516292dccbc953620254f511de1f990
+	(ess ess-R-data-view gruvbox-theme gnu-apl-mode python-environment auto-complete yasnippet use-package popup flycheck evil-org evil-magit markdown-mode+ markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
