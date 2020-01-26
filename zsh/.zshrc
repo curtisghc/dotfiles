@@ -141,6 +141,7 @@ alias nosebleed='sh $HOME/scripts/nosebleed.sh'
 alias wttr='curl -s http://wttr.in/'
 alias ec='emacsclient'
 
+alias pdflatex="pdflatex -interaction=nonstopmode"
 #bash /home/curtis/.fetch.sh
 
 #autoload -U compinit promptinit
