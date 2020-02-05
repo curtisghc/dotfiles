@@ -18,6 +18,8 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(global-set-key(kbd "C-x g") 'magit-status)
+
 ;;use-package automatically installs and applys configurations
 (use-package ess)
 (use-package evil
@@ -169,7 +171,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-	(ess ess-R-data-view gruvbox-theme gnu-apl-mode python-environment auto-complete yasnippet use-package popup flycheck evil-org evil-magit markdown-mode+ markdown-mode))))
+	(org-evil ess ess-R-data-view gruvbox-theme gnu-apl-mode python-environment auto-complete yasnippet use-package popup flycheck evil-org evil-magit markdown-mode+ markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
