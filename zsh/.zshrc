@@ -142,7 +142,6 @@ alias wttr='curl -s http://wttr.in/'
 alias ec='emacsclient'
 
 alias pdflatex='pdflatex -halt-on-error'
-
 #bash /home/curtis/.fetch.sh
 
 #autoload -U compinit promptinit
