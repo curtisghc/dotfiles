@@ -131,6 +131,10 @@
 
 ;;(add-hook 'org-mode-hook #'toggle-word-wrap)
 
+(set-frame-font "Menlo:pixelsize=14")
+(add-to-list 'default-frame-alist
+			 (cons 'font "Menlo:pixelsize=14"))
+
 (provide 'init)
 ;;; init.el ends here
 

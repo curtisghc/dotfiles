@@ -1,11 +1,11 @@
 URxvt.scrollBar: false
 URxvt.geometry: 84x25
-Emacs.font: DejaVu Sans Mono-10
+Emacs.font: Menlo-12
 Emacs.geometry: 82x40
 
 ! Fonts
 !URxvt.letterSpace: -1
-URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.font: xft:Menlo:size=10
 
 ! Cursor
 URxvt.cursorBlink:          true
