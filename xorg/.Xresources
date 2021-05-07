@@ -5,7 +5,8 @@ Emacs.geometry: 82x40
 
 ! Fonts
 !URxvt.letterSpace: -1
-URxvt.font: xft:Menlo:size=10
+!Urxvt.font xft:Menlo:size=10
+URxvt.font: xft:Roboto Mono:size=10
 
 ! Cursor
 URxvt.cursorBlink:          true
